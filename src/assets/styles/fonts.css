@@ -1,0 +1,50 @@
+/* Geometria */
+@font-face {
+  font-display: swap;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Geometria-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Geometria-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Geometria-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Geometria-ExtraBold.woff2") format("woff2");
+}
+
+/* Iosevka */
+@font-face {
+  font-display: swap;
+  font-family: "Iosevka";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Iosevka-Bold.woff2") format("woff2");
+}
+
+/* Px437 IBM BIOS */
+@font-face {
+  font-display: swap;
+  font-family: "BIOS";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/BIOS-Regular.woff") format("woff");
+}

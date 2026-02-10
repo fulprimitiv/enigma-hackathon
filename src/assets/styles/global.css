@@ -1,0 +1,37 @@
+@import "./normalize.css";
+@import "./fonts.css";
+@import "./variables.css";
+
+html,
+body {
+  background: var(--color-gray);
+  color: var(--color-black);
+  font-family: "Geometria", sans-serif;
+  /* stylelint-disable-next-line */
+  font-size: 62.5%; /* 1rem = undefined */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  text-rendering: optimizeLegibility;
+}
+
+textarea {
+  scrollbar-width: thin;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  outline: none;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
