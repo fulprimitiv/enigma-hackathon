@@ -20,7 +20,7 @@ export const About = () => {
             СТУДЕНТЫ
           </Typography>
           <Typography variant="categoryLight" color="invert">
-            Интересующиеся AI
+            WEB- и ML-разработчики
           </Typography>
         </div>
 
