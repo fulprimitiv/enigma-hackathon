@@ -7,10 +7,37 @@ type StepCardProps = {
   step: string;
   title: string;
   description?: string;
-  withLink?: boolean;
+  link?: string;
 };
 
-export function StepCard({ step, title, description }: StepCardProps) {
+export function StepCard({ step, title, description, link }: StepCardProps) {
+  if (link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.card}
+      >
+        <div className={styles.step}>
+          <span className={styles.stepNumber}>{step}</span>
+        </div>
+
+        <div className={styles.content}>
+          <Typography variant="stepHeader" className={styles.title}>
+            {title} <LinkIcon className={styles.link} />
+          </Typography>
+
+          {description && (
+            <Typography variant="stepSubheader" className={styles.description}>
+              {description}
+            </Typography>
+          )}
+        </div>
+      </a>
+    );
+  }
+
   return (
     <div className={styles.card}>
       <div className={styles.step}>
@@ -27,7 +54,6 @@ export function StepCard({ step, title, description }: StepCardProps) {
             {description}
           </Typography>
         )}
-        {step !== "03" && <LinkIcon />}
       </div>
     </div>
   );

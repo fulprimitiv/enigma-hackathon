@@ -10,12 +10,16 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media (max-width: 752px) {
+    gap: 12px;
+  }
 }
 
 .header {
   width: 100%;
   padding: 24px 48px;
-  background: var(--color-gray-light);
+  background-color: var(--color-gray-light);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -25,7 +29,7 @@
   text-align: left;
 
   @media (max-width: 752px) {
-    padding: 12px 24px;
+    padding: 12px;
   }
 }
 
@@ -34,6 +38,7 @@
   height: 40px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  color: var(--color-black);
 
   @media (max-width: 752px) {
     width: 24px;
@@ -58,7 +63,7 @@
 
 .contentOpen {
   max-height: none;
-  padding: 24px 24px 0 24px;
+  padding: 12px 12px 0 12px;
 
   opacity: 1;
   transform: translateY(0);

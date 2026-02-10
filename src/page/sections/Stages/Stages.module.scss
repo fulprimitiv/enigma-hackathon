@@ -1,19 +1,13 @@
-.stepsSection {
+.stagesSection {
   margin-bottom: 140px;
-  display: flex;
-  flex-direction: row;
 
   @media (max-width: 752px) {
     margin-bottom: 60px;
   }
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-  }
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
   @media (max-width: 752px) {
     margin-bottom: 30px;
@@ -23,10 +17,10 @@
 .steps {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 54px;
 
   @media (max-width: 752px) {
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
   }
 }

@@ -3,6 +3,11 @@ type FaqItem = {
   answer: string;
 };
 
+export const LINKS = {
+  telegram: "https://t.me/hackathon_aot",
+  form: "https://forms.yandex.ru/cloud/68dee3cfd04688236f79910c/",
+};
+
 export const FAQ_LIST: FaqItem[] = [
   {
     question: "ЧТО ДЕЛАТЬ, ЕСЛИ ВОЗНИКЛИ ПРОБЛЕМЫ С РЕГИСТРАЦИЕЙ?",
@@ -58,15 +63,18 @@ export const STEPS = [
     step: "01",
     title: "ЗАПОЛНИТЕ АНКЕТУ",
     description: "Зарегистрируйтесь до 26.02.2026, 23:59 Екб",
+    link: LINKS.form,
   },
   {
     step: "02",
     title: "ВСТУПИТЕ В ТЕЛЕГРАМ ЧАТ",
-    description: "",
+    description: undefined,
+    link: LINKS.telegram,
   },
   {
     step: "03",
     title: "ЖДИТЕ СТАРТА",
     description: "Детали и инструкции придут на указанный e-mail",
+    link: undefined,
   },
 ] as const;

@@ -1,0 +1,50 @@
+.card {
+  width: 100%;
+}
+
+.top {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 92px;
+  @media (max-width: 752px) {
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.date {
+  padding-block: 6px;
+  width: 170px;
+  text-align: center;
+  border: 2px solid var(--color-green);
+}
+
+.mode {
+  padding-block: 6px;
+  width: 125px;
+  text-align: center;
+}
+
+.online,
+.offline {
+  background: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+
+.body {
+  background: var(--color-gray-light);
+  padding: 46px 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--color-gray-light);
+  background-image: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (max-width: 752px) {
+    padding: 24px 16px;
+  }
+}

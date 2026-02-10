@@ -17,6 +17,7 @@ export function Steps() {
             step={step.step}
             title={step.title}
             description={step.description}
+            link={step.link}
           />
         ))}
       </div>
