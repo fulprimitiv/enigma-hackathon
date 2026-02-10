@@ -21,6 +21,7 @@ export const Map = () => {
             );
           }}
         />
+        <div className={styles.clickHint} />
       </Window>
     </section>
   );

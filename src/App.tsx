@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 
 import { useScrollToTop } from "@/helpers/hooks/useScrollToTop";
+import { Hero } from "@/page/sections/Hero/Hero";
 import { Loader } from "@/ui/loader/Loader";
 
 import { Layout } from "./components/layout/Layout";
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <Suspense fallback={<Loader />}>
+      <Hero />
       <Layout>
         <Page />
       </Layout>

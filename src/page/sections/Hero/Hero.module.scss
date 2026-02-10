@@ -1,0 +1,203 @@
+.aboutSection {
+  margin-bottom: 220px;
+  background-color: var(--color-gray-light);
+
+  @media (max-width: 752px) {
+    margin-bottom: 100px;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 55px 80px 0;
+  width: 100%;
+
+  @media (max-width: 1280px) {
+    padding: 0 48px 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 24px 0;
+  }
+
+  @media (max-width: 830px) {
+    padding: 0 16px 0;
+  }
+
+  @media (max-width: 752px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.aboutInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 140px;
+
+  @media (max-width: 752px) {
+    margin-block: 20px 70px;
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  color: var(--color-black);
+
+  @media (max-width: 752px) {
+    width: 65%;
+    height: 65%;
+  }
+}
+
+.windowWraper {
+  position: relative;
+  height: 140px;
+  top: 75px;
+  right: 174px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1320px) {
+    display: none;
+  }
+}
+
+.windowSecond {
+  position: absolute;
+  z-index: 2;
+  bottom: 90px;
+  left: 174px;
+}
+
+.window {
+  background-color: var(--color-gray-light);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  min-width: 240px;
+  position: relative;
+}
+
+.mascot {
+  display: none;
+  width: 80px;
+  height: 80px;
+  background: url("@/assets/icons/mascot.svg") no-repeat center / contain;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
+}
+
+.aboutActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1320px) {
+    padding-bottom: 20px;
+  }
+}
+
+.participateButton {
+  padding: 24px 58px;
+  background: var(--color-green);
+  border: 6px solid var(--color-gray-light);
+  text-decoration: none;
+  transform: translateY(55px);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  @media (max-width: 1320px) {
+    padding: 12px 29px;
+  }
+
+  @media (max-width: 752px) {
+    transform: translateY(0);
+    border: 3px solid var(--color-gray-light);
+  }
+}
+
+@media (min-width: 752px) {
+  .participateButton:hover {
+    transform: scaleY(1.05) translateY(55px) scaleX(1.05);
+    box-shadow: 0 8px 24px #17aa7455;
+  }
+}
+
+.telegramLink {
+  display: inline-flex;
+  animation: link-pulse 3s ease-in-out infinite;
+  align-items: center;
+  gap: 40px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  :hover {
+    text-decoration: underline;
+    transform: scaleY(1.05) scaleX(1.05);
+  }
+
+  @media (max-width: 752px) {
+    gap: 15px;
+    :hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.iconLink {
+  @media (max-width: 752px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.clickHint {
+  position: absolute;
+  right: -30px;
+  bottom: -50px;
+  width: 100px;
+  height: 100px;
+  background: url("@/assets/icons/cursor.svg") no-repeat center / contain;
+  pointer-events: none;
+
+  @media (max-width: 752px) {
+    width: 50px;
+    height: 50px;
+    right: -18px;
+    bottom: -25px;
+    animation: link-pulse 1.6s ease-in-out infinite;
+    animation-duration: 2.4s;
+    opacity: 0.7;
+  }
+}
+
+@keyframes link-pulse {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}

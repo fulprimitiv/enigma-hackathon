@@ -27,7 +27,7 @@ export function StageCard({ date, mode, title, description }: StageCardProps) {
             [styles.offline]: mode === "offline",
           })}
         >
-          {mode === "online" ? "ОНЛАЙН" : "ОФФЛАЙН"}
+          {mode === "online" ? "ОНЛАЙН" : "ОФЛАЙН"}
         </Typography>
       </div>
 
