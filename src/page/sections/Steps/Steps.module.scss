@@ -1,0 +1,28 @@
+.stepsSection {
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 752px) {
+    margin-bottom: 60px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+
+  @media (max-width: 752px) {
+    margin-bottom: 20px;
+  }
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media (max-width: 752px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

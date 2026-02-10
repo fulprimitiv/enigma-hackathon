@@ -1,0 +1,64 @@
+.card {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 36px;
+  background: var(--color-gray-light);
+  width: 650px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateX(-32px) skewX(-1deg);
+}
+
+.step {
+  width: 140px;
+  height: 140px;
+  background: var(--color-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 752px) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.stepNumber {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-family: "BIOS", monospace;
+  font-size: 6rem;
+  font-weight: 400;
+  color: var(--color-white);
+
+  @media (max-width: 752px) {
+    font-family: "BIOS", monospace;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 16px;
+  max-width: 420px;
+}

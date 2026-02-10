@@ -16,7 +16,7 @@ export const Map = () => {
           className={styles.map}
           onClick={() => {
             window.open(
-              "https://yandex.ru/maps/org/pereplyot/184017431668/?ll=60.614435%2C56.840193&z=16",
+              "https://yandex.ru/maps/org/pereplyot/184017431668",
               "_blank",
             );
           }}
