@@ -35,7 +35,7 @@ export const About = () => {
 
         <div className={styles.cell}>
           <Typography variant="category" color="accent">
-            2–4 человека
+            3–5 человек
           </Typography>
           <Typography variant="categoryLight" color="invert">
             В команде
