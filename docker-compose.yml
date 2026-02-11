@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  enigma:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: enigma
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.enigma.rule=Host(`enigma.urfubest.ru`)"
+      - "traefik.http.routers.enigma.service=enigma"
+      - "traefik.http.services.enigma.loadbalancer.server.port=81"
+      - "traefik.http.routers.enigma.entryPoints=http"
+      - "traefik.docker.network=traefik"
+
+networks:
+  traefik:
+    external: true
