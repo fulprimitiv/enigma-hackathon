@@ -35,17 +35,15 @@ export const Hero = () => {
         </div>
 
         <div className={styles.aboutActions}>
-          <a
-            href={LINKS.form}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            disabled
             className={styles.participateButton}
           >
             <Typography variant="button" color="invert">
-              УЧАСТВОВАТЬ
+              РЕГИСТРАЦИЯ ЗАКРЫТА
             </Typography>
             <div className={styles.clickHint} />
-          </a>
+          </button>
 
           <a
             href={LINKS.telegram}

@@ -43,7 +43,7 @@ export const FAQ_LIST: FaqItem[] = [
 
 export const STAGES = [
   {
-    date: "5–26 ФЕВРАЛЯ",
+    date: "5–24 ФЕВРАЛЯ",
     mode: "online",
     title: "РЕГИСТРАЦИЯ УЧАСТНИКОВ",
     description: "Оставьте заявку на странице, чтобы стать участником хакатона",
@@ -67,7 +67,7 @@ export const STEPS = [
   {
     step: "01",
     title: "ЗАПОЛНИТЕ АНКЕТУ",
-    description: "Зарегистрируйтесь до 26.02.2026, 23:59 Екб",
+    description: "Зарегистрируйтесь до 24.02.2026, 23:59 Екб",
     link: LINKS.form,
   },
   {
